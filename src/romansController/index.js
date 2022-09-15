@@ -9,10 +9,7 @@ function romans(req, res) {
         return res.status(404).json({message: "a must be number!"});
     }
 
-    
     let result = convRoman(a);
-
-    
 
     return res.status(200).json({message: "Result is " + result});
 }
